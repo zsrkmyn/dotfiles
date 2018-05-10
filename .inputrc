@@ -1,0 +1,29 @@
+set editing-mode vi
+set show-mode-in-prompt on
+set keyseq-timeout 100
+set mark-directories on
+set bell-style none
+set colored-stats on
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+set skip-completed-text on
+set visible-stats on
+set menu-complete-display-prefix on
+
+set keymap vi-command
+"d": backward-char
+"n": forward-char
+"h": next-history
+"t": previous-history
+"jj": kill-whole-line
+"j$": kill-line
+"jw": kill-word
+"j": vi-delete-to
+"\C-l": clear-screen
+
+set keymap vi-insert
+"\C-l": clear-screen
+TAB: menu-complete
+# use `cat` to determine the 'Shift-Tab' keyseq
+# run cat, then press C-v, then press S-Tab
+"\e[Z": menu-complete-backward

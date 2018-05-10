@@ -1,0 +1,67 @@
+#gerneral
+set editor = vim
+set my_name = "Stephen Zhang"
+
+#mail header cache
+set header_cache = ~/.cache/mutt/
+set message_cachedir = ~/.cache/mutt/
+
+set alias_file = ~/.mutt/aliases
+source $alias_file
+
+set imap_keepalive = 300
+set mail_check = 120
+
+unset imap_passive
+
+# use lower value for reading slower remote IMAP folders
+folder-hook 'imap' 'set read_inc=1'
+
+#maildir
+set folder = "~/mail"
+set spoolfile = "~/mail/inbox"
+set postponed = "~/mail/postponed"
+set record = "~/mail/sent"
+
+set quit = ask-yes
+set pager_index_lines = 7
+set check_new = yes
+set timeout = 300
+set narrow_tree = yes
+set sleep_time = 0
+set signature = "~/.mutt/signature"
+
+#theme
+#source "~/.mutt/zenburn.theme"
+source "~/.mutt/mutt-colors-solarized-dark-256.muttrc"
+
+#shortcuts
+macro index,pager  <esc>1 '<enter-command>source ~/.mutt/zsrkmyn_gmail_offline<enter><change-folder>!<enter>'
+macro index,pager  <esc>2 '<enter-command>source ~/.mutt/zsrkmyn_zju_offline<enter><change-folder>!<enter>'
+macro index,pager  <esc>3 '<enter-command>source ~/.mutt/zsrkmyn_archlinuxcn_offline<enter><change-folder>!<enter>'
+
+# html support
+auto_view text/html                                      # view html automatically
+alternative_order text/plain text/enriched text/html     # save html for last
+
+#zsrkmyn@gmail.com
+#source "~/.mutt/zsrkmyn_gmail"
+#folder-hook imaps://zsrkmyn@imap.gmail.com/ 'source ~/.mutt/zsrkmyn_gmail'
+folder-hook ~/mail/zsrkmyn_gmail 'source ~/.mutt/zsrkmyn_gmail_offline'
+
+#asenrzhang@gmail.com
+#source "~/.mutt/asenrzhang_gmail"
+folder-hook imaps://asenrzhang@imap.gmail.com/ 'source ~/.mutt/asenrzhang_gmail'
+
+#zsrkmyn@126.com
+#source "~/.mutt/zsrkmyn_126"
+#folder-hook $folder 'source ~/.mutt/zsrkmyn_126'
+
+#zsrkmyn@archlinuxcn.org
+#source "~/.mutt/zsrkmyn_archlinuxcn_offline"
+folder-hook ~/mail/zsrkmyn_archlinuxcn 'source ~/.mutt/zsrkmyn_archlinuxcn_offline'
+
+#zsrkmyn@zju.edu.cn
+folder-hook ~/mail/zsrkmyn_zju 'source ~/.mutt/zsrkmyn_zju_offline'
+
+source "~/.mutt/zsrkmyn_gmail_offline"

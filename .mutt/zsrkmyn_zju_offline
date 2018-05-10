@@ -1,0 +1,23 @@
+unset from
+unset smtp_url
+unset my_pass
+unset my_user
+unmailboxes *
+
+set folder = ~/mail/zsrkmyn_zju/
+
+set spoolfile = +INBOX
+set postponed = "+Drafts"
+mailboxes "+INBOX"
+mailboxes "+Trash"
+
+set realname = 'Stephen Zhang'
+set from = 'zsrkmyn@zju.edu.cn'
+set use_from = yes
+set sendmail = '/usr/bin/msmtp -a zsrkmyn_zju'
+
+macro index,pager d \
+    "<save-message>+Trash<enter><enter>" \
+    "move message to the trash"
+
+# vim:set ft=muttrc:

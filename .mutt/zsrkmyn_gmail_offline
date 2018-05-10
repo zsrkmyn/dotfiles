@@ -1,0 +1,32 @@
+unset from
+unset smtp_url
+unset my_pass
+unset my_user
+unmailboxes *
+
+set folder = ~/mail/zsrkmyn_gmail/
+
+set spoolfile = +INBOX
+set mbox = "+[Gmail].All Mail"
+set postponed = "+[Gmail].Drafts"
+mailboxes "+archlinux"
+mailboxes "+archlinux.arch-events"
+mailboxes "+archlinux.arch-announce"
+mailboxes "+archlinux.arch-general"
+mailboxes "+Deleted Items"
+mailboxes "+[Gmail].Starred"
+mailboxes "+[Gmail].Important"
+mailboxes "+[Gmail].Trash"
+#mailboxes "+[Gmail].Spam"
+mailboxes "+INBOX"
+
+set realname = 'Stephen Zhang'
+set from = 'zsrkmyn@gmail.com'
+set use_from = yes
+set sendmail = '/usr/bin/proxychains /usr/bin/msmtp -a zsrkmyn_gmail'
+
+macro index,pager d \
+    "<save-message>+[Gmail].Trash<enter><enter>" \
+    "move message to the trash"
+
+# vim:set ft=muttrc:
