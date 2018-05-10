@@ -1,6 +1,6 @@
 for i in \
 	.inputrc .ipython .msmtprc .mutt .offlineimap.d \
-	.profile .tmux.conf .toprc .urlview .zshrc
+	.profile .tmux.conf .toprc .urlview .zshrc .Xmodmap
 do
 	ln -s "$(pwd)/$i" ~/
 done
