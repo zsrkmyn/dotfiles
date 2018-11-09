@@ -11,14 +11,6 @@ set visible-stats on
 set menu-complete-display-prefix on
 
 set keymap vi-command
-"d": backward-char
-"n": forward-char
-"h": next-history
-"t": previous-history
-"jj": kill-whole-line
-"j$": kill-line
-"jw": kill-word
-"j": vi-delete-to
 "\C-l": clear-screen
 
 set keymap vi-insert

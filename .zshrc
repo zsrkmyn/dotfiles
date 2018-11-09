@@ -117,13 +117,6 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 
-bindkey -M vicmd "d" vi-backward-char
-bindkey -M vicmd "n" vi-forward-char
-bindkey -M vicmd "h" vi-down-line-or-history
-bindkey -M vicmd "t" vi-up-line-or-history
-bindkey -M vicmd "j" vi-delete
-bindkey -M vicmd "l" vi-repeat-search
-bindkey -M vicmd "L" vi-rev-repeat-search
 bindkey "\C-l" clear-screen
 bindkey "\C-u" backward-kill-line
 bindkey -M viins "\e[Z" reverse-menu-complete
