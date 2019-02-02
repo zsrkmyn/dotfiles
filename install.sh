@@ -6,6 +6,6 @@ do
 done
 
 [[ -d ~/.config ]] || mkdir ~/.config
-for i in i3 i3status; do
+for i in i3 i3status compton.conf; do
 	ln -s "$(pwd)/$i" ~/.config/
 done
