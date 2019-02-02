@@ -194,4 +194,5 @@ exec --no-startup-id [[ $(pidof fcitx5) == '' ]] && fcitx5 -r
 exec --no-startup-id [[ $(pidof redshift) == '' ]] && redshift
 exec --no-startup-id [[ $(pidof xfce4-volumed) == '' ]] && xfce4-volumed
 exec --no-startup-id [[ $(pidof compton) == '' ]] && compton -b
+exec --no-startup-id [[ $(pidof kdeconnect-indicator) == '' ]] && kdeconnect-indicator &> /tmp/tmp.log
 #exec --no-startup-id xmodmap ~/.Xmodmap
