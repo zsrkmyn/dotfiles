@@ -124,6 +124,7 @@ bindkey -M viins TAB menu-expand-or-complete
 bindkey -M viins '^?' backward-delete-char
 bindkey -M viins "^R" history-incremental-search-backward
 bindkey -M viins "^S" history-incremental-search-forward
+bindkey -M viins "^_" undo
 bindkey -r '\e,'
 bindkey -r '\e/'
 
@@ -140,7 +141,5 @@ alias gp11='g++ -std=c++11'
 alias cp11='clang++ -std=c++11'
 alias gp14='g++ -std=c++14'
 alias cp14='clang++ -std=c++14'
-
-systemctl --user import-environment PATH
 
 [[ -e ~/.profile ]] && . ~/.profile
