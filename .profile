@@ -1,10 +1,13 @@
-[[ `which systemctl` ]] && systemctl --user import-environment PATH
+# old zsh doesn't support [[ `cmd` ]] expr
+which systemctl &> /dev/null
+[[ $? -eq 0 ]] && systemctl --user import-environment PATH
 
 export MAKEFLAGS=-j4
 export PAGER='less -FXMr'
 export PATH=$PATH:~/.bin
 
-if [[ `which nvim` ]]; then
+which nvim &> /dev/null
+if [[ $? -eq 0 ]]; then
 	EDITOR=nvim
 	alias vi=nvim
 	alias vim=nvim
