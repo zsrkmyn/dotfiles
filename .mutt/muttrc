@@ -1,4 +1,5 @@
 #gerneral
+set rfc2047_parameters = yes # decode base64 for attachments
 set editor = vim
 set my_name = "Stephen Zhang"
 
@@ -36,6 +37,8 @@ set signature = "~/.mutt/signature"
 source "~/.mutt/mutt-colors-solarized-dark-256.muttrc"
 
 #shortcuts
+macro index,pager U '<toggle-new>'
+macro index,pager N '<search-opposite>'
 macro index,pager  <esc>1 '<enter-command>source ~/.mutt/zsrkmyn_gmail_offline<enter><change-folder>!<enter>'
 macro index,pager  <esc>2 '<enter-command>source ~/.mutt/zsrkmyn_zju_offline<enter><change-folder>!<enter>'
 macro index,pager  <esc>3 '<enter-command>source ~/.mutt/zsrkmyn_archlinuxcn_offline<enter><change-folder>!<enter>'
