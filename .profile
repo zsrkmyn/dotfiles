@@ -16,6 +16,8 @@ else
 fi
 export EDITOR
 
+[[ -f ~/.profile.extra ]] && . ~/.profile.extra
+
 # for ccache
 export PATH=/usr/lib64/ccache/bin/:/usr/lib/ccache/bin/:$PATH
 export CCACHE_DIR=/tmp/.ccache
