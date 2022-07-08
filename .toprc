@@ -6,10 +6,10 @@ Def	fieldscur=¥¨³´»½ÀÄ·º¹Å&')*+,-./012568<>?ABCFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdef
 Job	fieldscur=¥¦¹·º³´Ä»¼½§Å()*+,-./012568>?@ABCFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghij
 	winflags=196388, sortindx=21, maxtasks=0, graph_cpus=2, graph_mems=0
 	summclr=6, msgsclr=6, headclr=7, taskclr=6
-Mem	fieldscur=¥ºQ½<»¾¿ÀÁÃÄ³´7Å&'()*+,-./0125689BFGHIJKLMNOPRSTUVWXYZ[\]^_`abcdefghij
+Mem	fieldscur=¥¨½ºQ<»¾¿ÀÁÃÄ³´7Å&')*+,-./0125689BFGHIJKLMNOPRSTUVWXYZ[\]^_`abcdefghij
 	winflags=65524, sortindx=24, maxtasks=0, graph_cpus=2, graph_mems=0
 	summclr=6, msgsclr=6, headclr=6, taskclr=6
-Usr	fieldscur=¥¦§)¨ª°¹·ºÄ+,-./12³´µÅ68;<=>?@ABCFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghij
+Usr	fieldscur=¥&')¨ª°¹·ºÄ+,-./12³´µÅ68;<=>?@ABCFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghij
 	winflags=65460, sortindx=18, maxtasks=0, graph_cpus=2, graph_mems=0
 	summclr=3, msgsclr=3, headclr=2, taskclr=3
 Fixed_widest=1, Summ_mscale=1, Task_mscale=1, Zero_suppress=0
