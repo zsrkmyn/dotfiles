@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
-HISTSIZE=3000
-SAVEHIST=3000
+HISTSIZE=30000
+SAVEHIST=30000
 setopt appendhistory autocd extendedglob nonomatch notify
 unsetopt beep
 bindkey -v
@@ -11,6 +11,11 @@ zstyle :compinstall filename '/home/stephen/.zshrc'
 
 autoload -Uz compinit
 compinit
+
+autoload -Uz bashcompinit
+bashcompinit
+complete -C /usr/share/bash-completion/bash_completion
+
 # End of lines added by compinstall
 # 自动记住已访问目录栈
 setopt auto_pushd
