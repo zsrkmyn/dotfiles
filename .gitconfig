@@ -8,6 +8,10 @@
 	tool = vimdiff
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	co = checkout
+	c-p = cherry-pick
+	rst = reset
+	st = status -uno
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
