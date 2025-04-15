@@ -247,7 +247,7 @@
 #  less than 20, it is reset to 0 and a warning is issued).  This limit is
 #  defined because otherwise you'll spend more time re-flushing a too small cache
 #  than working
-c.InteractiveShell.cache_size = 0
+c.InteractiveShell.cache_size = 20
 
 ## Use colors for displaying information about objects. Because this information
 #  is passed through a pager (like 'less'), and some pagers get confused with
