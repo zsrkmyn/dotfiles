@@ -4,6 +4,7 @@
 	signingkey = C0BFAC35
 [core]
 	editor = vim
+	excludesFile = ~/.gitignore
 [merge]
 	tool = vimdiff
 [alias]
