@@ -17,6 +17,7 @@ which systemctl &> /dev/null
 
 export MAKEFLAGS=-j4
 export PAGER='less -FXMr'
+pathmunge ~/.local/bin
 pathmunge ~/.bin
 
 which nvim &> /dev/null
