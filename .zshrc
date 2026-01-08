@@ -148,3 +148,7 @@ alias gp14='g++ -std=c++14'
 alias cp14='clang++ -std=c++14'
 
 [[ -e ~/.profile ]] && . ~/.profile
+
+# if the $HISTFILE is a bind mount, don't use HIST_SAVE_BY_COPY to avoid
+# renaming issue
+findmnt -M $HISTFILE &> /dev/null && unsetopt HIST_SAVE_BY_COPY
